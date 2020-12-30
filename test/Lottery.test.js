@@ -100,7 +100,7 @@ describe ('Lottery Contract', () =>{
         const finalBalance = await web3.eth.getBalance(accounts[0]);
 
         const difference = finalBalance - initialBalance;
-        //find out how much spent on gas
+        //find out how much was spent on gas
         console.log(2000000000000000000 - (finalBalance - initialBalance));
 
         assert(difference > web3.utils.toWei('1.8', 'ether'));
